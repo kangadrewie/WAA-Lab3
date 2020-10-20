@@ -46,27 +46,17 @@ $('.nav-items').click(function() {
 toggle = (id) => {
     let current = document.getElementById('toggle-text').innerHTML;
     if (current === 'Professional'){
+        document.getElementById('slider-mobile').style.left = "90px";
+        document.getElementById('toggle-text-mobile').innerHTML = "Creative";
         document.getElementById('slider').style.right = "50px";
         document.getElementById('toggle-text').innerHTML = "Creative";
         document.getElementById("stylesheet").setAttribute("href", "creative_stylesheet.css");
 
     } else {
+        document.getElementById('slider-mobile').style.left = "50px";
+        document.getElementById('toggle-text-mobile').innerHTML = "Professional";
         document.getElementById('slider').style.right = "90px";
         document.getElementById('toggle-text').innerHTML = "Professional";
-        document.getElementById("stylesheet").setAttribute("href", "professional_stylesheet.css");
-    }
-}
-
-toggleMobile = (id) => {
-    let current = document.getElementById('toggle-text-mobile').innerHTML;
-    if (current === 'Professional'){
-        document.getElementById('slider-mobile').style.right = "90px";
-        document.getElementById('toggle-text-mobile').innerHTML = "Creative";
-        document.getElementById("stylesheet").setAttribute("href", "creative_stylesheet.css");
-
-    } else {
-        document.getElementById('slider-mobile').style.right = "50px";
-        document.getElementById('toggle-text-mobile').innerHTML = "Professional";
         document.getElementById("stylesheet").setAttribute("href", "professional_stylesheet.css");
     }
 }
