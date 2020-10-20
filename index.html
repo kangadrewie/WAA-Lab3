@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="professional_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link id="stylesheet" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fbe49aa440.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Andrew Gorman</title>
+</head>
+<body>
+    <header>
+        <i class="fas fa-bars menu" onclick="menu()"></i>
+        <h2 class="header-logo thin">Andrew Gorman</h2>
+        <h4 id="toggle-text">Professional</h4>
+        <span class="toggle-box" onclick="toggle(this.id)"></span>
+        <span id="slider" onclick="toggle(this.id)"></span>
+    </header>
+    <nav>
+        <h3 class="nav-heading">Navigation</h3>
+        <ul class="nav-items">
+            <a href="#about">
+                <li>About Me</li>
+            </a>
+            <a href="#tech">
+                <li>Familiar Technologies</li>
+            </a>
+            <a href="#work">
+                <li>Where I've Worked</li>
+            </a>
+            <a href="#study">
+                <li>Where I've Studied</li>
+            </a>
+             <a href="#questions">
+                <li>Questions About Me</li>
+            </a>
+       </ul>
+        <h3 class="nav-heading">Lab Work</h3>
+        <ul class="nav-items">
+            <a href="https://www.linkedin.com/in/drewgorman" id="LinkedIn" target="_blank">
+                <li>
+                   Lab 1 
+                </li>
+            </a>
+            <a href="https://github.com/kangadrewie" target="_blank" id="GitHub">
+                <li>
+                    Lab 2 
+                </li>
+            </a>
+            <a href="https://www.agorman.dev" id="Portfolio" target="_blank">
+                <li>
+                    Lab 3
+                </li>
+            </a>
+        </ul>
+
+        <h3 class="nav-heading">Social Media</h3>
+        <ul class="nav-items">
+            <a href="https://www.linkedin.com/in/drewgorman" id="LinkedIn" target="_blank">
+                <li>
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </li>
+            </a>
+            <a href="https://github.com/kangadrewie" target="_blank" id="GitHub">
+                <li>
+                    <i class="fab fa-github-square"></i>
+                    GitHub 
+                </li>
+            </a>
+            <a href="https://www.agorman.dev" id="Portfolio" target="_blank">
+                <li>
+                    <i class="fas fa-code portfolio"></i>
+                    Portfolio
+                </li>
+            </a>
+            <a href="https://www.dropbox.com/s/y7l3im7n48l2pt1/Andrew%20Gorman%20CV.pdf?dl=0"  id="CV" target="_blank">
+                <li>
+                    <i class="far fa-file-alt"></i>
+                    CV
+                </li>
+            </a>
+            <a href="mailto:andrewgorman101@gmail.com" target="_blank">
+                <li>
+                    <i class="far fa-envelope"></i>
+                    Mail
+                </li>
+            </a>
+            <h4 id="toggle-text-mobile">Professional</h4>
+            <span class="toggle-box-mobile" onclick="toggleMobile(this.id)"></span>
+            <span id="slider-mobile" onclick="toggleMobile(this.id)"></span>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row welcome">
+            <div class="col">
+                <h1 class="bold">Welcome!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/image-gallery-0.jpg" class="carousel-img rounded-circle d-block w-25" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image-gallery-1.jpg" class="carousel-img rounded-circle d-block w-25" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image-gallery-2.jpg" class="carousel-img rounded-circle d-block w-25" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image-gallery-3.jpg" class="carousel-img rounded-circle d-block w-25" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="row" id="about">
+            <div class="col">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 about-col">
+                <p class="content">I am a passionate and aspiring Software Engineer studying a MSc in Computer Science (Part-Time) at Technological University Dublin. I've a strong desire to learn and grow my skillset in an industry that I am extremely enthusiastic about.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 about-col">
+                <p class="content">I'm currently focused on developing my knowledge in Backend Web Development, but having worked as a Graphic Designer for 5 years, I have a keen eye for detail, design, symmetry, and colour and enjoy applying these skills to Front-End Development.</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 about-col">
+                <p class="content">I’m a fast learner, and firmly believe in the importance of interaction, feedback, and collaboration in the creative problem-solving process.</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 id="tech">Familiar Technologies</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tech</th>
+                            <th scope="col">Experience</th>
+                            <th scope="col">Frameworks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Python3</th>
+                            <td>1 Year</td>
+                            <td>Flask</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Javascript</th>
+                            <td>1 Year</td>
+                            <td>jQuery, ReactJS</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">HTML5</th>
+                            <td>1 Year</td>
+                            <td>Bootstrap, SemanticUI, CSSGrid</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ReactJS</th>
+                            <td>6 Months</td>
+                            <td>Spring, React-Animations</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">CSS3</th>
+                            <td>1 Year</td>
+                            <td>Bootstrap, SemanticUI</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">AWS</th>
+                            <td>1 Year</td>
+                            <td>LightSail, S3, EC2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Git</th>
+                            <td>1 Year</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="work">Where I've Worked</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>As a self-proclaimed rookie, I am relatively new to this industry, having only begun my journey to Software Engineering in the last 12 months. Before this, I worked as a Graphic Designer for a busy design studio in Dublin, and was most recently employed as an Employment Advisor responsible for managing a large client portfolio on behalf of the Department of Employment Affairs and Protection. However, over the course of the last 12 months, I have developed skills and knowledge in many area of Software Engineering, and am actively driven to continue exploring new technologies and concepts daily.</p>
+            </div>
+        </div>
+
+        <div class="row section">
+            <div class="col-lg-4 col-md-12">
+                <h3 class="bold work-heading">O'Brien Print</h3>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <h4 class="employer-title bold">Graphic Designer | Aug, 2014 - Jan, 2020</h4>
+                    <ul>
+                        <li>Develop, design and produce creative designs for a wide variety of clients</li>
+                        <li>Projects include brochures, stickers, postcards, banners, posters, business cards, flyers, pens, diaries, notebooks and website materials</li>
+                        <li>Collaborate with Sales and Production departments to meet clients needs and restrictions (including budget)</li>
+                        <li>Design and execute email marketing campaigns using MailChimp</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="study">Where I've Studied</h2>
+            </div>
+        </div>
+
+        <div class="row section">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a class="study-image" href="https://www.tudublin.ie" target="_blank">
+                            <img class="study-image" src="./images/tudublin.png" alt="" width="125px">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="bold study-heading">TU Dublin</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <h4 class="college-title bold">MSc Computer Sceince (Master's Qualifier), First Class Honours</h4>
+                <h4 class="college-title">Modules</h4>
+                <ul>
+                    <li>Object Oriented Software Development</li>
+                    <li>Information Systems</li>
+                    <li>Web and User Interface Design</li>
+                    <li>Architecture, Operation Systems and Networks</li>
+                    <li>System Analysis and Testing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row section">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a class="study-image" href="https://www.dcu.ie" target="_blank">
+                            <img class="study-image" src="./images/dcu.png" alt="" width="105px">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="bold study-heading">Dublin City University</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <h4 class="college-title bold">BA Hons Media Production Management, First Class Honours</h4>
+                <h4 class="college-title">Modules</h4>
+                <ul>
+                    <li>Research Methods</li>
+                    <li>Consumer Behaviour</li>
+                    <li>Human Resource Management</li>
+                    <li>Media and Entertainment Law</li>
+                    <li>Project Management</li>
+                    <li>International Media Marketing</li>
+                    <li>Strategic Media Management</li>
+                    <ul>
+                        <br>
+                        <li>Dissertation - Match Game: The Influence of Sponsor-Event Congruence on Brand Awareness and Brand Image in Esports</li>
+                        <a href="https://bit.ly/2Z5aliS" target="_blank">
+                            <li class="bold">Dissertation Link - Click Here</li>
+                        </a>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row section">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a class="study-image" href="http://www.stjohnsdls.ie/" target="_blank">
+                            <img class="study-image" src="./images/johns.png" alt="" width="105px">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="bold study-heading">St. John's College</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <h4 class="college-title bold">Leaving Certificate, 2012</h4>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 id="questions">Questions About Me</h2>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="col">
+                    <h3>What is your favourite Programming Language?</h3>
+                    <p id="ans1" class="hidden">Python 🐍</p>
+                    <button onclick="revealAnswer(this.id)" id="reveal-ans1">Show Answer</button>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="col">
+                    <h3>What is your favourite framework?</h3>
+                    <p id="ans2" class="hidden">React 🚀</p>
+                    <button onclick="revealAnswer(this.id)" id="reveal-ans2">Show Answer</button>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="col">
+                    <h3>What is your least favourite programming language?</h3>
+                    <p id="ans3" class="hidden">To be Confirmed 😅</p>
+                    <button onclick="revealAnswer(this.id)" id="reveal-ans3">Show Answer</button>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="container-fluid">
+            <div class="row section">
+                <div class="col-12 centered">
+                    <a class="footer-img" href="https://www.tudublin.ie" target="_blank">
+                        <img src="./images/tudublin.png" alt="" width="265px">
+                    </a>
+                    <h3>Current Time</h3>
+                    <h4 id="time-box" class="bold"></h4>
+                </div>
+            </div>
+        </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</html>
